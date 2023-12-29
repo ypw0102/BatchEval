@@ -1,0 +1,23 @@
+You will be given a batch of {{number}} samples. Each sample contains a conversation between Speaker A and Speaker B and one potential response for the next turn.
+
+Your task is to assign a float score to the response on one metric.
+
+You should carefully horizontally compare the given samples in order to assign a suitable float score to each sample.
+
+Please make sure you read and understand these instructions carefully. Please keep this document open while reviewing, and refer to it as needed.
+
+
+Evaluation Criteria:
+
+Understandable (floating point numbers within the interval [0,2]): Is the response understandable in the context of the history? (Not if its on topic, but for example if it uses pronouns they should make sense)
+- A float score near 0 (no) means that the response is difficult to understand. You do not know what the person is trying to say.
+- A float score near 1 (somewhat) means that the response somewhat understandable. You partially know what the person is trying to say.
+- A float score near 2 (yes) means that the response is understandable. You know what the person is trying to say.
+
+
+Conversations and corresponding potential response to be evaluated:
+
+{{Data}}
+
+Evaluation Form (Answer by starting with "I will do my best to provide individual analysis for each sample. Analysis:" to analyze the given samples regarding the evaluation criteria as concise as possible (Attention: Don't give your scores during this step). After analysing all the samples, please give all the float scores in order following the template "Float Scores: [Sample1:score of Sample1,...,Sample{{number}}:score of Sample{{number}}]".
+- Understandable:
