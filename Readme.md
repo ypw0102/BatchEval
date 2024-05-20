@@ -1,4 +1,4 @@
-# BatchEval: Towards Human-like Text Evaluation
+# BatchEval: Towards Human-like Text Evaluation [ACL2024 main]
 ![img_1.png](img_1.png)
 
  
